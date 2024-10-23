@@ -81,7 +81,7 @@ fun ImageCarousel(profileId: String, onBackClick: () -> Unit, viewModel: Profile
                 profile?.idString?.let {
                     Text(
                         text = it,
-                        style = MaterialTheme.typography.titleLarge.copy(color = Color.Black)
+                        style = MaterialTheme.typography.titleMedium.copy(color = Color.Black)
                     )
                 }
             }
@@ -131,7 +131,8 @@ fun ImageCarousel(profileId: String, onBackClick: () -> Unit, viewModel: Profile
                     repeat(5) { index -> // Change this to the actual number of images
                         val activeColor = Color.Gray // Active dot color (purple)
                         val inactiveColor = Color.White // Inactive dot color (gray)
-                        val color = if (pagerState.currentPage == index) activeColor else inactiveColor
+                        val color =
+                            if (pagerState.currentPage == index) activeColor else inactiveColor
                         Box(
                             modifier = Modifier
                                 .size(15.dp) // Size of the dots
@@ -143,6 +144,7 @@ fun ImageCarousel(profileId: String, onBackClick: () -> Unit, viewModel: Profile
 
                 // Pagination text "1/5"
                 Text(
+                    style = MaterialTheme.typography.titleSmall.copy(color = Color.Black),
                     text = "${pagerState.currentPage + 1}/5", // Change this to the actual number of images
                     modifier = Modifier
                         .align(Alignment.BottomEnd) // Align to the bottom end

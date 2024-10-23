@@ -43,7 +43,7 @@ fun MoreUtilRow(title: String, onMoreClick: () -> Unit) {
         Text(
             text = title,
             textAlign = TextAlign.Center,
-            style = MaterialTheme.typography.titleLarge.copy(color = Color.Black)
+            style = MaterialTheme.typography.titleMedium.copy(color = Color.Black)
         )
     }
 }

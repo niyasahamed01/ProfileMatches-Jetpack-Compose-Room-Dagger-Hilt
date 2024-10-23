@@ -37,7 +37,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
-import androidx.navigation.NavHostController
+import androidx.navigation.NavController
 import coil.compose.AsyncImage
 import coil.request.ImageRequest
 import com.niyas.composeprofiler.R
@@ -49,7 +49,7 @@ import kotlinx.coroutines.launch
 @Composable
 fun ProfileList(
     viewModel: ProfileViewModel,
-    navController: NavHostController,
+    navController: NavController,
 ) {
     // Collect the profiles as state
     val profiles by viewModel.profiles.collectAsState()
@@ -91,7 +91,7 @@ fun ProfileList(
 @Composable
 fun ProfileCardList(
     profiles: ProfileState,
-    navController: NavHostController,
+    navController: NavController,
     coroutineScope: CoroutineScope,
     viewModel: ProfileViewModel,
     context: Context
