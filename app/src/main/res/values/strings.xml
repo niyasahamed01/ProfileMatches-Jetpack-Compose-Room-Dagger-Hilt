@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ComposeProfiler</string>
+    <string name="profile_john_doe">30 yrs, 5 ft 2 in, Tamil Nair, Software Engineer, Chennai, Tamil Nadu, India</string>
+    <string name="profile_jane_smith">27 yrs, 5 ft 2 in, Tamil Nair, Graphic Designer, Chennai, Tamil Nadu, India</string>
+    <string name="profile_alice_johnson">27 yrs, 5 ft 2 in, Tamil Nair, Project Manager, Chennai, Tamil Nadu, India</string>
+    <string name="profile_bob_brown">27 yrs, 5 ft 2 in, Tamil Nair, Data Scientist, Chennai, Tamil Nadu, India</string>
+    <string name="profile_charlie_green">27 yrs, 5 ft 2 in, Tamil Nair, UX Designer, Chennai, Tamil Nadu, India</string>
+</resources>
